@@ -5,19 +5,19 @@
     "cliPort": 17117,
 
     "clustering": {
-        "enabled": true,
-        "forks": "auto"
+        "enabled": false,
+        "forks": 1
     },
 
     "defaultPoolConfigs": {
-        "blockRefreshInterval": 500,
-        "jobRebroadcastTimeout": 55,
+        "blockRefreshInterval": 1000,
+        "jobRebroadcastTimeout": 45,
         "connectionTimeout": 600,
         "emitInvalidBlockHashes": false,
-        "validateWorkerUsername": true,
+        "validateWorkerUsername": false,
         "tcpProxyProtocol": false,
         "banning": {
-            "enabled": true,
+        "enabled": false,
             "time": 600,
             "invalidPercent": 50,
             "checkThreshold": 500,
@@ -33,12 +33,12 @@
     "website": {
         "enabled": true,
         "host": "0.0.0.0",
-        "port": 8080,
-        "stratumHost": "cryppit.com",
+        "port": 80,
+        "stratumHost": "tiltpool.com",
         "stats": {
-            "updateInterval": 30,
+            "updateInterval": 5,
             "historicalRetention": 14400,
-            "hashrateWindow": 300
+            "hashrateWindow": 720
         },
         "adminCenter": {
             "enabled": false,

@@ -1,0 +1,14 @@
+{
+    "name": "Hacash",
+    "symbol": "HAC",
+    "algorithm": "x16rs",
+    "getInfo": false,
+    "noNetworkInfo": false,
+    "noGetnetworkhashps": true,
+    "txfee": 0.0001,
+    "blockTime": 240,
+    "explorer": {
+        "txURL": "https://explorer.hacash.org/tx/",
+        "blockURL": "https://explorer.hacash.org/block/"
+    }
+}

@@ -367,7 +367,7 @@ function SetupForPool(logger, poolOptions, setupFinished) {
 
     function cacheNetworkStats() {
         var params = null;
-        daemon.cmd('getmininginfo', params,
+        daemon.cmd('/query?action=pending_block', params,
             function (result) {
                 if (!result || result.error || result[0].error || !result[0].response) {
                     logger.error(logSystem, logComponent, 'Error with RPC call getmininginfo ' + JSON.stringify(result[0].error));

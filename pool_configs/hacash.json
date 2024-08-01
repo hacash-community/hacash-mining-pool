@@ -1,18 +1,10 @@
 {
     "enabled": true,
-    "coin": "susucoin.json",
-
-    "address": "",
-    "BTCover17": true,
-    "_comment_BTCover17": "If BTC 0.17 or higher, payment does not work please enable it",
-
-    "rewardRecipients": {
-        "": 1.0
-    },
+    "coin": "hacash.json",
 
     "paymentProcessing": {
         "minConf": 10,
-        "enabled": true,
+        "enabled": false,
         "paymentMode": "prop",
         "_comment_paymentMode": "prop, pplnt",
         "paymentInterval": 120,
@@ -20,7 +12,7 @@
         "maxBlocksPerPayment": 3,
         "daemon": {
             "host": "127.0.0.1",
-            "port": 8876,
+            "port": 25252,
             "user": "username",
             "password": "password"
         }
@@ -34,15 +26,15 @@
     },
 
     "ports": {
-        "3032": {
-            "diff": 0.5,
+        "3333": {
+            "diff": 0.005,
             "tls": false,
             "varDiff": {
-                "minDiff": 0.00,
-                "maxDiff": 16,
+                "minDiff": 0.0005,
+                "maxDiff": 128,
                 "targetTime": 15,
                 "retargetTime": 60,
-                "variancePercent": 30
+                "variancePercent": 15
             }
         }
     },
@@ -53,16 +45,16 @@
     "daemons": [
         {
             "host": "127.0.0.1",
-            "port": 8876,
-            "user": "username",
-            "password": "password"
+            "port": 8081,
+            "user": "",
+            "password": ""
         }
     ],
 
     "p2p": {
-        "enabled": true,
+        "enabled": false,
         "host": "127.0.0.1",
-        "port": 8877,
+        "port": 19333,
         "disableTransactions": true
     },
 
